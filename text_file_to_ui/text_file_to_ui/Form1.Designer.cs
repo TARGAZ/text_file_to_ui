@@ -29,74 +29,73 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnChoseFile = new System.Windows.Forms.Button();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtYearsOfBirth = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtFaculty = new System.Windows.Forms.TextBox();
+            this.txtRole = new System.Windows.Forms.TextBox();
+            this.txtRoleSpecificationAtribut = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbFullName = new System.Windows.Forms.Label();
+            this.lbYearsOfBirth = new System.Windows.Forms.Label();
+            this.lbCity = new System.Windows.Forms.Label();
+            this.lbFaculty = new System.Windows.Forms.Label();
+            this.lbRole = new System.Windows.Forms.Label();
+            this.lbRoleSpecificationAtribut = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnChoseFile
             // 
-            this.button1.Location = new System.Drawing.Point(26, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Chose file...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnChoseFile.Location = new System.Drawing.Point(26, 21);
+            this.btnChoseFile.Name = "btnChoseFile";
+            this.btnChoseFile.Size = new System.Drawing.Size(131, 36);
+            this.btnChoseFile.TabIndex = 0;
+            this.btnChoseFile.Text = "Chose file...";
+            this.btnChoseFile.UseVisualStyleBackColor = true;
+            this.btnChoseFile.Click += new System.EventHandler(this.btnChoseFile_Click);
             // 
-            // textBox1
+            // txtFullName
             // 
-            this.textBox1.Location = new System.Drawing.Point(292, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtFullName.Location = new System.Drawing.Point(292, 82);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(172, 22);
+            this.txtFullName.TabIndex = 1;
             // 
-            // textBox2
+            // txtYearsOfBirth
             // 
-            this.textBox2.Location = new System.Drawing.Point(292, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 22);
-            this.textBox2.TabIndex = 2;
+            this.txtYearsOfBirth.Location = new System.Drawing.Point(292, 127);
+            this.txtYearsOfBirth.Name = "txtYearsOfBirth";
+            this.txtYearsOfBirth.Size = new System.Drawing.Size(172, 22);
+            this.txtYearsOfBirth.TabIndex = 2;
             // 
-            // textBox3
+            // txtCity
             // 
-            this.textBox3.Location = new System.Drawing.Point(292, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 22);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtCity.Location = new System.Drawing.Point(292, 176);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(172, 22);
+            this.txtCity.TabIndex = 3;
             // 
-            // textBox4
+            // txtFaculty
             // 
-            this.textBox4.Location = new System.Drawing.Point(292, 230);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 22);
-            this.textBox4.TabIndex = 4;
+            this.txtFaculty.Location = new System.Drawing.Point(292, 230);
+            this.txtFaculty.Name = "txtFaculty";
+            this.txtFaculty.Size = new System.Drawing.Size(172, 22);
+            this.txtFaculty.TabIndex = 4;
             // 
-            // textBox5
+            // txtRole
             // 
-            this.textBox5.Location = new System.Drawing.Point(292, 280);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(172, 22);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.txtRole.Location = new System.Drawing.Point(292, 280);
+            this.txtRole.Name = "txtRole";
+            this.txtRole.Size = new System.Drawing.Size(172, 22);
+            this.txtRole.TabIndex = 5;
             // 
-            // textBox6
+            // txtRoleSpecificationAtribut
             // 
-            this.textBox6.Location = new System.Drawing.Point(292, 334);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(172, 22);
-            this.textBox6.TabIndex = 6;
+            this.txtRoleSpecificationAtribut.Location = new System.Drawing.Point(292, 334);
+            this.txtRoleSpecificationAtribut.Name = "txtRoleSpecificationAtribut";
+            this.txtRoleSpecificationAtribut.Size = new System.Drawing.Size(172, 22);
+            this.txtRoleSpecificationAtribut.TabIndex = 6;
             // 
             // contextMenuStrip1
             // 
@@ -104,79 +103,78 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // label1
+            // lbFullName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 16);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Full name :";
+            this.lbFullName.AutoSize = true;
+            this.lbFullName.Location = new System.Drawing.Point(23, 88);
+            this.lbFullName.Name = "lbFullName";
+            this.lbFullName.Size = new System.Drawing.Size(71, 16);
+            this.lbFullName.TabIndex = 8;
+            this.lbFullName.Text = "Full name :";
             // 
-            // label2
+            // lbYearsOfBirth
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Years of birth :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbYearsOfBirth.AutoSize = true;
+            this.lbYearsOfBirth.Location = new System.Drawing.Point(23, 133);
+            this.lbYearsOfBirth.Name = "lbYearsOfBirth";
+            this.lbYearsOfBirth.Size = new System.Drawing.Size(91, 16);
+            this.lbYearsOfBirth.TabIndex = 9;
+            this.lbYearsOfBirth.Text = "Years of birth :";
             // 
-            // label3
+            // lbCity
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "City :";
+            this.lbCity.AutoSize = true;
+            this.lbCity.Location = new System.Drawing.Point(23, 182);
+            this.lbCity.Name = "lbCity";
+            this.lbCity.Size = new System.Drawing.Size(35, 16);
+            this.lbCity.TabIndex = 10;
+            this.lbCity.Text = "City :";
             // 
-            // label4
+            // lbFaculty
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 236);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Faculty :";
+            this.lbFaculty.AutoSize = true;
+            this.lbFaculty.Location = new System.Drawing.Point(23, 236);
+            this.lbFaculty.Name = "lbFaculty";
+            this.lbFaculty.Size = new System.Drawing.Size(56, 16);
+            this.lbFaculty.TabIndex = 11;
+            this.lbFaculty.Text = "Faculty :";
             // 
-            // label5
+            // lbRole
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 286);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Role :";
+            this.lbRole.AutoSize = true;
+            this.lbRole.Location = new System.Drawing.Point(23, 286);
+            this.lbRole.Name = "lbRole";
+            this.lbRole.Size = new System.Drawing.Size(42, 16);
+            this.lbRole.TabIndex = 12;
+            this.lbRole.Text = "Role :";
             // 
-            // label6
+            // lbRoleSpecificationAtribut
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 340);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(167, 16);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "[Role specification atribut] :";
+            this.lbRoleSpecificationAtribut.AutoSize = true;
+            this.lbRoleSpecificationAtribut.Location = new System.Drawing.Point(23, 340);
+            this.lbRoleSpecificationAtribut.Name = "lbRoleSpecificationAtribut";
+            this.lbRoleSpecificationAtribut.Size = new System.Drawing.Size(167, 16);
+            this.lbRoleSpecificationAtribut.TabIndex = 13;
+            this.lbRoleSpecificationAtribut.Text = "[Role specification atribut] :";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 423);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbRoleSpecificationAtribut);
+            this.Controls.Add(this.lbRole);
+            this.Controls.Add(this.lbFaculty);
+            this.Controls.Add(this.lbCity);
+            this.Controls.Add(this.lbYearsOfBirth);
+            this.Controls.Add(this.lbFullName);
+            this.Controls.Add(this.txtRoleSpecificationAtribut);
+            this.Controls.Add(this.txtRole);
+            this.Controls.Add(this.txtFaculty);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtYearsOfBirth);
+            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.btnChoseFile);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -186,20 +184,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnChoseFile;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtYearsOfBirth;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.TextBox txtFaculty;
+        private System.Windows.Forms.TextBox txtRole;
+        private System.Windows.Forms.TextBox txtRoleSpecificationAtribut;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbFullName;
+        private System.Windows.Forms.Label lbYearsOfBirth;
+        private System.Windows.Forms.Label lbCity;
+        private System.Windows.Forms.Label lbFaculty;
+        private System.Windows.Forms.Label lbRole;
+        private System.Windows.Forms.Label lbRoleSpecificationAtribut;
     }
 }
 

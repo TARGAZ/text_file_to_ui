@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using text_file_to_ui.Class;
 
 namespace text_file_to_ui
 {
@@ -17,19 +18,12 @@ namespace text_file_to_ui
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void btnChoseFile_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            string filePath = null;
+            UserFileReader userFileReader = new UserFileReader();
+            userFileReader.OpenFileExplorer(filePath);
+            return;
         }
     }
 }
