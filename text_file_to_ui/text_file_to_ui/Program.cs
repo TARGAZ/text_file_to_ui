@@ -16,6 +16,7 @@ namespace text_file_to_ui
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //do the run at the end
             Application.Run(new Form1());
         }
     }

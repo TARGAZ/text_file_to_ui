@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace text_file_to_ui.Class
+{
+    public class UserDisplayer
+    {
+        User UserToDisplay;
+        UserInfoFrom UserInfoFrom;
+    }
+}
