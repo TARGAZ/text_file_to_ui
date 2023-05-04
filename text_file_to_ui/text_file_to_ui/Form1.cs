@@ -20,10 +20,14 @@ namespace text_file_to_ui
 
         private void btnChoseFile_Click(object sender, EventArgs e)
         {
-            string filePath = null;
             UserFileReader userFileReader = new UserFileReader();
-            userFileReader.OpenFileExplorer(filePath);
+            UserParser userParser = new UserParser();
+            User user = new User();
+            userFileReader.OpenFileExplorer();
+            userParser.UserStringData = userFileReader.ReadFile();
+            userParser.PaserData(user);
             return;
         }
+
     }
 }

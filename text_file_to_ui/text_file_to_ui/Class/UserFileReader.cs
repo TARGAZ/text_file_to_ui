@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace text_file_to_ui.Class
 {
@@ -13,7 +15,7 @@ namespace text_file_to_ui.Class
     {
         public string filePath;
         public UserFileReader() { }
-        public void OpenFileExplorer(string filePath)
+        public void OpenFileExplorer()
         {
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
@@ -29,6 +31,15 @@ namespace text_file_to_ui.Class
                 {
                     MessageBox.Show("WrongFile");
                 }
+            }
+        }
+
+        public string[] ReadFile()
+        {
+            using (StreamReader file = new StreamReader(filePath))
+            {
+                string filecontent = file.ReadToEnd();
+                return filecontent.Split(new char[] { '\n' });
             }
         }
     }
