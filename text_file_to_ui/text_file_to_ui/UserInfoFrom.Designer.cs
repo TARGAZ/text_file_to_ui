@@ -1,6 +1,6 @@
 ﻿namespace text_file_to_ui
 {
-    partial class Form1
+    partial class UserInfoFrom
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -184,20 +184,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnChoseFile;
-        private System.Windows.Forms.TextBox txtFullName;
-        private System.Windows.Forms.TextBox txtYearsOfBirth;
-        private System.Windows.Forms.TextBox txtCity;
-        private System.Windows.Forms.TextBox txtFaculty;
-        private System.Windows.Forms.TextBox txtRole;
-        private System.Windows.Forms.TextBox txtRoleSpecificationAtribut;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Label lbFullName;
-        private System.Windows.Forms.Label lbYearsOfBirth;
-        private System.Windows.Forms.Label lbCity;
-        private System.Windows.Forms.Label lbFaculty;
-        private System.Windows.Forms.Label lbRole;
-        private System.Windows.Forms.Label lbRoleSpecificationAtribut;
+        public System.Windows.Forms.Button btnChoseFile;
+        public System.Windows.Forms.TextBox txtFullName;
+        public System.Windows.Forms.TextBox txtYearsOfBirth;
+        public System.Windows.Forms.TextBox txtCity;
+        public System.Windows.Forms.TextBox txtFaculty;
+        public System.Windows.Forms.TextBox txtRole;
+        public System.Windows.Forms.TextBox txtRoleSpecificationAtribut;
+        public System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        public System.Windows.Forms.Label lbFullName;
+        public System.Windows.Forms.Label lbYearsOfBirth;
+        public System.Windows.Forms.Label lbCity;
+        public System.Windows.Forms.Label lbFaculty;
+        public System.Windows.Forms.Label lbRole;
+        public System.Windows.Forms.Label lbRoleSpecificationAtribut;
     }
 }
 

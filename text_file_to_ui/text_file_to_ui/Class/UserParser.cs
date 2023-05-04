@@ -25,9 +25,9 @@ namespace text_file_to_ui.Class
             user.FullName += ' ';
             user.FullName += UserStringData[1];
 
-            user.YearsOfBirth = int.Parse(UserStringData[2]);
+            user.YearsOfBirth = UserStringData[2];
 
-            user.CountryOfOrigin = UserStringData[3];
+            user.City = UserStringData[3];
 
             user.Faculty = UserStringData[4];
 

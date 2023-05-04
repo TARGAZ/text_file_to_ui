@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using text_file_to_ui.Class;
 
 namespace text_file_to_ui
 {
@@ -17,7 +18,9 @@ namespace text_file_to_ui
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //do the run at the end
-            Application.Run(new Form1());
+            UserInfoFrom userInfoFrom = new UserInfoFrom();
+
+            Application.Run(userInfoFrom);
         }
     }
 }

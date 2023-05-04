@@ -9,10 +9,10 @@ namespace text_file_to_ui.Class
 {
     public class User
     {
-        public int YearsOfBirth;
+        public string YearsOfBirth;
         public string FullName;
         public string Faculty;
-        public string CountryOfOrigin;
+        public string City;
         public string FavoriteCourse;
         public string Role;
 

@@ -11,9 +11,9 @@ using text_file_to_ui.Class;
 
 namespace text_file_to_ui
 {
-    public partial class Form1 : Form
+    public partial class UserInfoFrom : Form
     {
-        public Form1()
+        public UserInfoFrom()
         {
             InitializeComponent();
         }
@@ -23,11 +23,15 @@ namespace text_file_to_ui
             UserFileReader userFileReader = new UserFileReader();
             UserParser userParser = new UserParser();
             User user = new User();
+            
             userFileReader.OpenFileExplorer();
             userParser.UserStringData = userFileReader.ReadFile();
             userParser.PaserData(user);
-            return;
-        }
 
+            UserDisplayer userDisplayer = new UserDisplayer(user, this);
+
+            userDisplayer.DisplayUser();
+
+        }
     }
 }
