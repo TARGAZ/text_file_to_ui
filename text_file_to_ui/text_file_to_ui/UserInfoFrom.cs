@@ -18,20 +18,23 @@ namespace text_file_to_ui
             InitializeComponent();
         }
 
+        //Presse the button to chose the file
         private void btnChoseFile_Click(object sender, EventArgs e)
         {
+            //Create object
             UserFileReader userFileReader = new UserFileReader();
             UserParser userParser = new UserParser();
             User user = new User();
             
+            //Open the file and read data
             userFileReader.OpenFileExplorer();
             userParser.UserStringData = userFileReader.ReadFile();
             userParser.PaserData(user);
 
+            //Display the data
             UserDisplayer userDisplayer = new UserDisplayer(user, this);
 
             userDisplayer.DisplayUser();
-
         }
     }
 }

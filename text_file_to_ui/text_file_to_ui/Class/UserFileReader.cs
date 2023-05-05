@@ -19,6 +19,7 @@ namespace text_file_to_ui.Class
         {
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
+                //Open a file explorer to chose the file only .txt file are allowed
                 openFileDialog1.InitialDirectory = "c:\\";
                 openFileDialog1.Filter = "txt files (*.txt)|*.txt";
                 openFileDialog1.FilterIndex = 2;
@@ -38,6 +39,7 @@ namespace text_file_to_ui.Class
         {
             using (StreamReader file = new StreamReader(filePath))
             {
+                //Read the file and split it by line
                 string filecontent = file.ReadToEnd();
                 return filecontent.Split(new char[] { '\n' });
             }

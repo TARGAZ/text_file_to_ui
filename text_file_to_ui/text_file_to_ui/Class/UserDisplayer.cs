@@ -19,12 +19,14 @@ namespace text_file_to_ui.Class
 
         public void DisplayUser()
         {
+            //Put the user information inside the text box
             userInfoFrom.txtFullName.Text = userToDisplay.FullName;
             userInfoFrom.txtYearsOfBirth.Text = userToDisplay.YearsOfBirth;
             userInfoFrom.txtCity.Text = userToDisplay.City;
             userInfoFrom.txtFaculty.Text = userToDisplay.Faculty;
             userInfoFrom.txtRole.Text = userToDisplay.Role;
-            userInfoFrom.txtRoleSpecificationAtribut.Text = userToDisplay.FavoriteCourse;
+            userInfoFrom.txtRoleSpecificationAtribut.Text = userToDisplay.Atribut;
+            userInfoFrom.lbRoleSpecificationAtribut.Text = userToDisplay.RoleSpecificationAtribut;
         }
 
         

@@ -12,15 +12,24 @@ namespace text_file_to_ui.Class
         public string[] UserStringData;
         public void PaserData(User user)
         {
-            for(int i = 0; i < UserStringData.Length; i++)
+            // If there is more attribute of a user and if they are variable, I'll probably only use one string[]
+            // and then use a for loop to get the data
+            for (int i = 0; i < UserStringData.Length; i++)
             {
+                //Keep only the data after the '='
                 int index = UserStringData[i].LastIndexOf('=');
                 if(index >= 0)
                 {
+                    if(i == 6)
+                    {
+                        //Read the user role specification attribute before the '='
+                        user.RoleSpecificationAtribut = UserStringData[i].Substring(0, index);
+                    }
                     UserStringData[i] = UserStringData[i].Substring(index+1);
                 }
             }
 
+            //Put the data inside the user object
             user.FullName = UserStringData[0];
             user.FullName += ' ';
             user.FullName += UserStringData[1];
@@ -33,7 +42,7 @@ namespace text_file_to_ui.Class
 
             user.Role = UserStringData[5];
 
-            user.FavoriteCourse = UserStringData[6];
+            user.Atribut = UserStringData[6];
         }
 
         public UserParser() { }
